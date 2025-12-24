@@ -1,0 +1,403 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: poppins;
+    background-color: #F5F5F57A;
+}
+
+.main {
+        padding-block: 30px;
+}
+
+.container {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.first-container {
+    padding-top: 20px;
+    position: fixed;
+    text-align: center;
+    inset: 0;
+    background-color: transparent;
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+}
+
+.show .first-container {
+    transform: scale(0);
+} 
+
+.start-container {
+    background-color: #35BD3A;
+    width: 450px;
+    margin-inline: auto;
+    border-radius: 10px;
+}
+
+.start-container h2 {
+    font-size: 52px;
+    font-weight: 600;
+    color:#FFFFFF;
+    line-height: 80px;
+    cursor: pointer;
+}
+
+.container-hide {
+     display: none;
+}
+
+.show .container-hide {
+    display: block;
+}
+
+.overlay {
+    background-color: #CCE2C2;
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+}
+
+.sub-container {
+    width: 70%;
+    margin: auto;
+}
+
+.second-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.Quiz-img2 {
+    width: 222px;
+}
+
+.show-again .Quiz-img2 {
+   width: 300px;
+}
+
+.out-off-container {
+    text-align: end;
+}
+
+.out-off {
+    width: 110px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 50px;
+    background-color: #FEC33D;
+    display: inline-block;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.question {
+    min-height: 130px;
+    background-color: #F5F5F57A;
+    border-radius: 14px;
+    padding: 28px 40px;
+}
+
+.paragraph-question{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+}
+
+
+.timer-container {
+    text-align: end;
+} 
+
+.timer {
+    width: 110px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 50px;
+    background-color: #02A4096E;
+    display: inline-block;
+    text-align: center;
+    border-radius: 6px;
+    color: #FFFFFF;
+}
+
+.answer-container {
+    background-color: #F5F5F57A;
+    padding-block: 20px;
+    border-radius: 14px;
+}
+
+.sub-ans-container {
+    margin-block: 16px;
+    width: 92%;
+    margin-inline: auto;
+    border: 3px solid #D9D9D9;
+    border-radius: 8px;
+    padding-inline: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.answer {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+}
+
+.open-close-icon {
+    width: 24px;
+    pointer-events: none;
+}
+
+.next {
+    text-align: end;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    color: #01AB08;
+}
+
+.next a{
+ text-decoration-line: none;
+}
+
+.paragraph-yadav {
+    text-align: center;
+    line-height: 40px;
+}
+
+.fifty-percent .overlay {
+    background-color: #E4E5C7!important;
+}
+
+.fifty-percent .timer {
+    background-color: #C5B1006E!important;
+}
+
+.next.fifty-percent {
+    color: #C58800!important;
+}
+
+.ninety-percent .overlay {
+    background-color: #d9a1a1!important;
+}
+
+.ninety-percent .timer {
+    background-color: #C50C006E!important;
+}
+
+.next .ninety-percent {
+    color: #C50000!important;
+}
+
+
+.border-red {
+    border-color: red;
+}
+
+.border-green {
+    border-color: green;
+}
+
+.third-container {
+    display: none;
+}
+
+.show-again .third-container {
+    display: block;
+}
+
+.show-again .container-hide {
+    display: none;
+}
+
+.show-again .first-container {
+    transform: scale(0);
+} 
+
+.option-disabled{
+    pointer-events: none;
+}
+
+.third-center {
+    justify-content: center!important;
+    align-items: center;
+    flex-direction: column;
+}
+
+.result-paragraph {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0px 0px 0px 24px;
+}
+
+.bar-container{
+    padding: 10px 30px 20px 30px;
+}
+
+.bar-graph {
+    max-width: 700px;
+    height: 60px;
+    background-color: #C50000;
+    margin-inline: auto;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.bar-graph2 {
+    height: 100%;
+    background-color: #01AB08;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.bar-graph2 span {
+    min-width: max-content;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.result-out-off{
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.quote {
+    text-align: center;
+}
+
+.keep{
+    font-size: 32px;
+    margin-bottom: 18px;
+}
+
+button {
+    color: #CCE2C2;
+    background-color: #01AB08;
+    border: none;
+    padding: 18px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.Yadavji{
+    margin-top: 42px;
+    margin-bottom: 0px;
+}
+
+.Yadavji span {
+    color: rgb(255, 168, 105);
+}
+
+.next2{
+    pointer-events: none;
+}
+
+
+
+@media(max-width:480px) {
+    img.img-quiz {
+        width: 350px;
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+
+    .start-container h2 {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 60px;
+    }
+
+    .start-container {
+        width: 230px;
+        border-radius: 8px;
+        margin-bottom: 52px;
+    }
+
+    .out-off {
+        width: 84px;
+        font-size: 22px;
+        line-height: 42px;
+    }
+
+    .question {
+        min-height: 114px;
+        border-radius: 12px;
+        padding: 12px 24px;
+    }
+
+    .paragraph-question {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .timer {
+        width: 84px;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 42px;
+    }
+
+    .answer {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .sub-ans-container {
+        margin-block: 8px;
+        padding-inline: 14px;
+    }
+
+    .open-close-icon {
+        width: 18px;
+    }
+
+    .next {
+        font-size: 20px;
+        line-height: 12px;
+    }
+
+    .show-again .Quiz-img2 {
+        width: 250px;
+    }
+
+    .result-paragraph {
+        font-size: 26px;
+    }
+
+    .bar-graph {
+        height: 40px;
+        border-radius: 24px;
+    }
+
+    .bar-container {
+        padding: 24px 30px 20px 30px;
+    }
+
+    .bar-graph2 span {
+        font-size: 14px;
+    }
+
+    .result-out-off {
+        font-size: 16px;
+    }
+
+    .keep {
+        font-size: 24px;
+    }
+
+    button{
+        padding: 14px 22px;
+        font-size: 18px;
+    }
+}
